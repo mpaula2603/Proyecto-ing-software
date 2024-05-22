@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+import CardItem from "../components/CardItem.astro";
+import Counter from "../components/Counter.astro";
+import Header from "../components/Header.astro";
+import PlanCards from "../components/PlanCards.astro";
+import ManualSection from "../components/ManualSection.astro";
+import VideoFooter from "../components/VideoFooter.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.webp" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <Layout title="Pagina Inicial">
+      <Header />
+      <Counter />
+      <CardItem />
+      <PlanCards />
+      <ManualSection />
+      <VideoFooter />
+    </Layout>
+  </body>
+</html>
